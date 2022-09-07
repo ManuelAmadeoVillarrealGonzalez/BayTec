@@ -8,7 +8,7 @@ Equipo:
 
 - Manuel Amadeo Villarreal González - @manueliz
 
-- Sergio Alonso Saldaña Millán - @AlonsoMillan
+- Sergio Alonso Saldaña Millán - @Alonsomillan
 
 - Anthony Ibrail Ortega Méndez - @anthonyibrail
 
