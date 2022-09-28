@@ -6,7 +6,7 @@ Equipo:
 
 - Laura Patricia Carrasco Molina - A01731531
 
-- Manuel Amadeo Villarreal González - @manueliz
+- Manuel Amadeo Villarreal González - @https://github.com/ManuelAmadeoVillarrealGonzalez
 
 - Sergio Alonso Saldaña Millán - @Alonsomillan
 
