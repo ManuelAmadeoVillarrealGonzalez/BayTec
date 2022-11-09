@@ -17,8 +17,23 @@ print(tiempo) # Impirmimos la hora actual
 #Recorremos la lista e imprimimos horario por horario dentro de la lista
 for horario in horarioLau:
   print(horario)
-  if horario == tiempo: print("A darle canijo") #Cuando la hora real coincida con una de las horas de la lista esto se ejecuta
-  if horario == "23:45": print("Hora inventada") #Este se ejecuta al ser la misma hora que esta dentro de la lista
+  if horario == tiempo: 
+    print("A darle canijo") #Cuando la hora real coincida con una de las horas de la lista esto se ejecuta
+
+for horario in horarioAnth:
+  print(horario)
+  if horario == tiempo: 
+    print("A darle Anthony") #Cuando la hora real coincida con una de las horas de la lista esto se ejecuta
+        
+for horario in horarioAmad:
+    print(horario)
+    if horario == tiempo: 
+        print("A darle Amadeo") #Cuando la hora real coincida con una de las horas de la lista esto se ejecuta
+
+for horario in horarioAlo:
+    print(horario)
+    if horario == tiempo: 
+        print("A darle Alonso") #Cuando la hora real coincida con una de las horas de la lista esto se ejecuta                   
 
 
 if face_names == ['Alonso']: 
