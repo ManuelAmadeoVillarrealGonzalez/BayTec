@@ -21,15 +21,3 @@ while True:
     conn.send(data.encode())  # send data to the client
 
 conn.close()  # close the connection
-
-
-'''with conn:
-    print(f"Connected by {addr}")
-    while True:
-        data = conn.recv(1024)
-        if not data:
-            break
-        print("from connected user: " + str(data))
-        data = input(' -> ')
-        conn.sendall(data.encode())
-        '''

@@ -24,3 +24,16 @@ for horario in horarioLau:
 if face_names == ['Alonso']: 
   print("Hola ALonso") 
   playsound('Audios/BayTecBienvenida.mp3')
+  ##saluda
+  #da pastillas
+  #audio temperatura
+  #mueve el brazo
+  #audio acercar dedo
+  #instruccion al soc para sensores con nombre
+  #delay
+  #audio que diga ya ouedes quitar el dedo
+  #vlteo de griper
+  #adio del seguiente sensor
+  #tomar del siguiente sensor
+  #audio de agradecimiento 
+  #se regresa a casa
