@@ -4,10 +4,7 @@ from playsound import playsound
 #Aqui jalamos el codigo en donde se jala la info de la base de datos
 from subPastillero import *
 
-#Jalamos la hora actual y la establecemos en formato hora:minuto
-now = datetime.now()
-tiempo = now.strftime("%H:%M")
-print(tiempo) # Impirmimos la hora actual
+
 
 
 def Alonso():
@@ -44,6 +41,10 @@ def Laura ():
 
 
 while(True):
+  #Jalamos la hora actual y la establecemos en formato hora:minuto
+  now = datetime.now()
+  tiempo = now.strftime("%H:%M")
+  print(tiempo) # Impirmimos la hora actual
   #Recorremos la lista e imprimimos horario por horario dentro de la lista
   for horario in horarioLau:
     print(horario)
