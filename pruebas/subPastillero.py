@@ -25,74 +25,75 @@ db = firebase.database()
 
 
 #Creamos un while para que cada 10 seg publique la informacion en el formato correcto
-while True:
 
-  #Laura
-  print("Datos paciente Laura")
+#Laura
+print("Datos paciente Laura")
 
-  pastilleroLau = db.child("BayTec").child("Laura").child("Pastillero").get().val()
-  print(pastilleroLau)
+pastilleroLau = db.child("BayTec").child("Laura").child("Pastillero").get().val()
+print(pastilleroLau)
 
-  habitacionLau = db.child("BayTec").child("Laura").child("Habitacion").get().val()
-  print(habitacionLau)
+habitacionLau = db.child("BayTec").child("Laura").child("Habitacion").get().val()
+print(habitacionLau)
 
-  horarioLau = db.child("BayTec").child("Laura").child("Horario").get().val()
-  #Modificamos la varibale horarioLau para que nos la de en formato de lista ya accesible 
-  horarioLau = horarioLau.translate({ord('['):None, ord(']'):None, ord('"'):None}) 
-  horarioLau = horarioLau.split(',')
-  print(horarioLau)
+horarioLau = db.child("BayTec").child("Laura").child("Horario").get().val()
+#Modificamos la varibale horarioLau para que nos la de en formato de lista ya accesible 
+horarioLau = horarioLau.translate({ord('['):None, ord(']'):None, ord('"'):None}) 
+horarioLau = horarioLau.split(',')
+print(horarioLau)
 
-  print("Data loaded from real time database")
-
-
-  #Anthony
-  print("Datos paciente Anthony")
-
-  pastilleroAnth = db.child("BayTec").child("Anthony").child("Pastillero").get().val()
-  print(pastilleroAnth)
-
-  habitacionAnth = db.child("BayTec").child("Anthony").child("Habitacion").get().val()
-  print(habitacionAnth)
-
-  horarioAnth = db.child("BayTec").child("Anthony").child("Horario").get().val()
-  horarioAnth = horarioAnth.translate({ord('['):None, ord(']'):None, ord('"'):None}) 
-  horarioAnth = horarioAnth.split(',')
-  print(horarioAnth)
-
-  print("Data loaded from real time database")
+print("Data loaded from real time database")
 
 
-  #Amadeo
-  print("Datos paciente Amadeo")
+#Anthony
+print("Datos paciente Anthony")
 
-  pastilleroAmad = db.child("BayTec").child("Amadeo").child("Pastillero").get().val()
-  print(pastilleroAmad)
+pastilleroAnth = db.child("BayTec").child("Anthony").child("Pastillero").get().val()
+print(pastilleroAnth)
 
-  habitacionAmad = db.child("BayTec").child("Amadeo").child("Habitacion").get().val()
-  print(habitacionAmad)
+habitacionAnth = db.child("BayTec").child("Anthony").child("Habitacion").get().val()
+print(habitacionAnth)
 
-  horarioAmad = db.child("BayTec").child("Amadeo").child("Horario").get().val()
-  horarioAmad = horarioAmad.translate({ord('['):None, ord(']'):None, ord('"'):None}) 
-  horarioAmad = horarioAmad.split(',')
-  print(horarioAmad)
+horarioAnth = db.child("BayTec").child("Anthony").child("Horario").get().val()
+horarioAnth = horarioAnth.translate({ord('['):None, ord(']'):None, ord('"'):None}) 
+horarioAnth = horarioAnth.split(',')
+print(horarioAnth)
 
-  print("Data loaded from real time database")
+print("Data loaded from real time database")
 
 
-  #Alonso
-  print("Datos paciente Alonso")
+#Amadeo
+print("Datos paciente Amadeo")
 
-  pastilleroAlo = db.child("BayTec").child("Alonso").child("Pastillero").get().val()
-  print(pastilleroAlo)
+pastilleroAmad = db.child("BayTec").child("Amadeo").child("Pastillero").get().val()
+print(pastilleroAmad)
 
-  habitacionAlo = db.child("BayTec").child("Alonso").child("Habitacion").get().val()
-  print(habitacionAlo)
+habitacionAmad = db.child("BayTec").child("Amadeo").child("Habitacion").get().val()
+print(habitacionAmad)
 
-  horarioAlo = db.child("BayTec").child("Alonso").child("Horario").get().val()
-  horarioAlo = horarioAlo.translate({ord('['):None, ord(']'):None, ord('"'):None}) 
-  horarioAlo = horarioAlo.split(',')
-  print(horarioAlo)
+horarioAmad = db.child("BayTec").child("Amadeo").child("Horario").get().val()
+horarioAmad = horarioAmad.translate({ord('['):None, ord(']'):None, ord('"'):None}) 
+horarioAmad = horarioAmad.split(',')
+print(horarioAmad)
 
-  print("Data loaded from real time database ")
+print("Data loaded from real time database")
+
+
+#Alonso
+print("Datos paciente Alonso")
+
+pastilleroAlo = db.child("BayTec").child("Alonso").child("Pastillero").get().val()
+print(pastilleroAlo)
+
+habitacionAlo = db.child("BayTec").child("Alonso").child("Habitacion").get().val()
+print(habitacionAlo)
+
+horarioAlo = db.child("BayTec").child("Alonso").child("Horario").get().val()
+horarioAlo = horarioAlo.translate({ord('['):None, ord(']'):None, ord('"'):None}) 
+horarioAlo = horarioAlo.split(',')
+print(horarioAlo)
+
+print("Data loaded from real time database ")
       
-  time.sleep(60)
+
+
+print("HOla")
