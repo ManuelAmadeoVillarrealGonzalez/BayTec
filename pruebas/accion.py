@@ -4,18 +4,11 @@ from playsound import playsound
 #Aqui jalamos el codigo en donde se jala la info de la base de datos
 from subPastillero import *
 
-
-
-
-def Alonso():
-  if face_names == ['Alonso']: 
-    print("Hola ALonso") 
-    playsound('Audios/BayTecBienvenida.mp3')
-    playsound('Audios de interacción/Paciente4.mp3')
-    ##saluda
+def Gen ():
+  ##saluda
     playsound('Audios de interacción/EntregaPastillas.mp3') # Audio de pastillas
     #da pastillas
-    #audio temperatura
+    playsound('Audios de interacción/TomaTemperatura.mp3')#audio temperatura
     #mueve el brazo
     #audio acercar dedo
     #instruccion al soc para sensores con nombre
@@ -23,21 +16,47 @@ def Alonso():
     #audio que diga ya ouedes quitar el dedo
     #vlteo de griper
     playsound('Audios de interacción/CambioDeSensor.mp3') #adio del seguiente sensor
-    #tomar del siguiente sensor
+    playsound('Audios de interacción/TomaBMPyOxi.mp3')#tomar del siguiente sensor
     playsound('Audios de interacción/Despedida.mp3') #audio de agradecimiento 
     #se regresa a casa
 
+
+def Alonso():
+  if face_names == ['Alonso']: 
+    print("Hola ALonso") 
+    playsound('Audios/BayTecBienvenida.mp3')
+    playsound('Audios de interacción/Paciente4.mp3')
+    Gen ()
+  else : 
+    playsound('Audios de interacción/PacienteNoEncontrado.mp3')
+    
+
 def Amadeo():
-  playsound('Audios de interacción/Paciente3.mp3')
-  
+  if face_names == ['Amadeo']: 
+    print("Hola Amadeo") 
+    playsound('Audios/BayTecBienvenida.mp3')
+    playsound('Audios de interacción/Paciente3.mp3')
+    Gen ()
+  else : 
+    playsound('Audios de interacción/PacienteNoEncontrado.mp3')  
 
 def Anthony():
-  playsound('Audios de interacción/Paciente2.mp3')
-
+  if face_names == ['Anthony']: 
+    print("Hola Anthony") 
+    playsound('Audios/BayTecBienvenida.mp3')
+    playsound('Audios de interacción/Paciente2.mp3')
+    Gen ()
+  else : 
+    playsound('Audios de interacción/PacienteNoEncontrado.mp3')
 
 def Laura ():
-  playsound('Audios de interacción/Paciente1.mp3')
-
+  if face_names == ['Laura']: 
+    print("Hola Laura") 
+    playsound('Audios/BayTecBienvenida.mp3')
+    playsound('Audios de interacción/Paciente1.mp3')
+    Gen ()
+  else : 
+    playsound('Audios de interacción/PacienteNoEncontrado.mp3')
 
 
 while(True):
