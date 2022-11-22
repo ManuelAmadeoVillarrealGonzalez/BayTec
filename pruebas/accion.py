@@ -24,7 +24,7 @@ def Gen ():
 def Alonso():
   if face_names == ['Alonso']: 
     print("Hola ALonso") 
-    playsound('Audios/BayTecBienvenida.mp3')
+    playsound('Audios de interacción/Saludo.mp3')
     playsound('Audios de interacción/Paciente4.mp3')
     Gen ()
   else : 
@@ -34,7 +34,7 @@ def Alonso():
 def Amadeo():
   if face_names == ['Amadeo']: 
     print("Hola Amadeo") 
-    playsound('Audios/BayTecBienvenida.mp3')
+    playsound('Audios de interacción/Saludo.mp3')
     playsound('Audios de interacción/Paciente3.mp3')
     Gen ()
   else : 
@@ -43,7 +43,7 @@ def Amadeo():
 def Anthony():
   if face_names == ['Anthony']: 
     print("Hola Anthony") 
-    playsound('Audios/BayTecBienvenida.mp3')
+    playsound('Audios de interacción/Saludo.mp3')
     playsound('Audios de interacción/Paciente2.mp3')
     Gen ()
   else : 
@@ -52,7 +52,7 @@ def Anthony():
 def Laura ():
   if face_names == ['Laura']: 
     print("Hola Laura") 
-    playsound('Audios/BayTecBienvenida.mp3')
+    playsound('Audios de interacción/Saludo.mp3')
     playsound('Audios de interacción/Paciente1.mp3')
     Gen ()
   else : 

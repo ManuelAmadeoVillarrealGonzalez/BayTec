@@ -62,7 +62,7 @@ while (True):
     #############################################################
     
     if face_names != [] and face_names != ['Unknown'] : break #Se agrega esta condicion para que en cuanto detecte a alguien conocido se cierre y proceda
-    else: playsound('Audios de interacción/PacienteNoEncontrado.mp3')
+    #else: playsound('Audios de interacción/PacienteNoEncontrado.mp3')
     # Hit 'q' on the keyboard to quit!
     if cv2.waitKey(1) & 0xFF == ord('q'):
         # END OF THE GAME/LIFE
