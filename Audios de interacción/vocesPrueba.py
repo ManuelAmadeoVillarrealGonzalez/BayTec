@@ -18,7 +18,7 @@ audio_BuscandoPastillas = gTTS(text = "Tuuututuuu laaalaralaaa... buscando pasti
 audio_BuscandoPastillas.save('RecogePastillas.mp3')
 playsound('.\RecogePastillas.mp3')
 
-audio_Traslado = gTTS(text = "Abran paso perras, que no veo equisde, no ya al chile, no esquivo y tengo que entregar éstas pinches pastillas", lang = idioma, slow = rapido)
+audio_Traslado = gTTS(text = "Abran paso por favor, tengo que entregar estas pastillas", lang = idioma, slow = rapido)
 audio_Traslado.save('Traslado.mp3')
 playsound('.\Traslado.mp3')
 
