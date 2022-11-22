@@ -1,8 +1,7 @@
 from datetime import datetime
 from playsound import playsound
 
-#Aqui jalamos el codigo en donde se jala la info de la base de datos
-from subPastillero import *
+
 
 def Gen ():
   ##saluda
@@ -29,6 +28,7 @@ def Alonso():
     Gen ()
   else : 
     playsound('Audios de interacción/PacienteNoEncontrado.mp3')
+  
     
 
 def Amadeo():
@@ -60,6 +60,8 @@ def Laura ():
 
 
 while(True):
+  #Aqui jalamos el codigo en donde se jala la info de la base de datos
+  from subPastillero import *
   #Jalamos la hora actual y la establecemos en formato hora:minuto
   now = datetime.now()
   tiempo = now.strftime("%H:%M")
@@ -99,6 +101,6 @@ while(True):
         #ir del locobot
         playsound('Audios de interacción/ReconocimientoFacial.mp3')
         from cv2_face_recognition import * #funcion face
-        Alonso()                 
+        Alonso()       
 
 
