@@ -1,10 +1,8 @@
 from datetime import datetime
 from playsound import playsound
 
-
-
 def Gen ():
-  ##saluda
+    #saluda
     playsound('Audios de interacción/EntregaPastillas.mp3') # Audio de pastillas
     playsound('Audios de interacción/TomaTemperatura.mp3')#audio temperatura
     #mueve el brazo
