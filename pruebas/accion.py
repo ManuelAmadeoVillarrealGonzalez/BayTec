@@ -6,7 +6,6 @@ from playsound import playsound
 def Gen ():
   ##saluda
     playsound('Audios de interacción/EntregaPastillas.mp3') # Audio de pastillas
-    #da pastillas
     playsound('Audios de interacción/TomaTemperatura.mp3')#audio temperatura
     #mueve el brazo
     #audio acercar dedo
@@ -25,6 +24,7 @@ def Alonso():
     print("Hola ALonso") 
     playsound('Audios de interacción/Saludo.mp3')
     playsound('Audios de interacción/Paciente4.mp3')
+    print(pastilleroAlo)
     Gen ()
   else : 
     playsound('Audios de interacción/PacienteNoEncontrado.mp3')
@@ -36,6 +36,7 @@ def Amadeo():
     print("Hola Amadeo") 
     playsound('Audios de interacción/Saludo.mp3')
     playsound('Audios de interacción/Paciente3.mp3')
+    print(pastilleroAmad)
     Gen ()
   else : 
     playsound('Audios de interacción/PacienteNoEncontrado.mp3')  
@@ -45,6 +46,7 @@ def Anthony():
     print("Hola Anthony") 
     playsound('Audios de interacción/Saludo.mp3')
     playsound('Audios de interacción/Paciente2.mp3')
+    print(pastilleroAnth)
     Gen ()
   else : 
     playsound('Audios de interacción/PacienteNoEncontrado.mp3')
@@ -54,6 +56,7 @@ def Laura ():
     print("Hola Laura") 
     playsound('Audios de interacción/Saludo.mp3')
     playsound('Audios de interacción/Paciente1.mp3')
+    print(pastilleroLau)
     Gen ()
   else : 
     playsound('Audios de interacción/PacienteNoEncontrado.mp3')
@@ -62,16 +65,19 @@ def Laura ():
 while(True):
   #Aqui jalamos el codigo en donde se jala la info de la base de datos
   from subPastillero import *
+  
   #Jalamos la hora actual y la establecemos en formato hora:minuto
   now = datetime.now()
   tiempo = now.strftime("%H:%M")
   print(tiempo) # Impirmimos la hora actual
+  
   #Recorremos la lista e imprimimos horario por horario dentro de la lista
   for horario in horarioLau:
     print(horario)
     if horario == tiempo: 
-      print("A darle canijo") #Cuando la hora real coincida con una de las horas de la lista esto se ejecuta
+      print("A darle Lau") #Cuando la hora real coincida con una de las horas de la lista esto se ejecuta
       #ir del locobot
+      print(habitacionLau)
       playsound('Audios de interacción/ReconocimientoFacial.mp3')
       from cv2_face_recognition import * #funcion face
       Laura() 
@@ -81,6 +87,7 @@ while(True):
     if horario == tiempo: 
       print("A darle Anthony") #Cuando la hora real coincida con una de las horas de la lista esto se ejecuta
       #ir del locobot
+      print(habitacionAnth)
       playsound('Audios de interacción/ReconocimientoFacial.mp3')
       from cv2_face_recognition import * #funcion face
       Anthony() 
@@ -90,6 +97,7 @@ while(True):
       if horario == tiempo: 
         print("A darle Amadeo") #Cuando la hora real coincida con una de las horas de la lista esto se ejecuta
         #ir del locobot
+        print(habitacionAmad)
         playsound('Audios de interacción/ReconocimientoFacial.mp3')
         from cv2_face_recognition import * #funcion face
         Amadeo() 
@@ -99,6 +107,7 @@ while(True):
       if horario == tiempo: 
         print("A darle Alonso") #Cuando la hora real coincida con una de las horas de la lista esto se ejecuta   
         #ir del locobot
+        print(habitacionAlo)
         playsound('Audios de interacción/ReconocimientoFacial.mp3')
         from cv2_face_recognition import * #funcion face
         Alonso()       
