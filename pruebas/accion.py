@@ -1,8 +1,7 @@
 from datetime import datetime
 from playsound import playsound
 
-#Aqui jalamos el codigo en donde se jala la info de la base de datos
-from subPastillero import *
+
 
 def Gen ():
   ##saluda
@@ -24,17 +23,18 @@ def Gen ():
 def Alonso():
   if face_names == ['Alonso']: 
     print("Hola ALonso") 
-    playsound('Audios/BayTecBienvenida.mp3')
+    playsound('Audios de interacción/Saludo.mp3')
     playsound('Audios de interacción/Paciente4.mp3')
     Gen ()
   else : 
     playsound('Audios de interacción/PacienteNoEncontrado.mp3')
+  
     
 
 def Amadeo():
   if face_names == ['Amadeo']: 
     print("Hola Amadeo") 
-    playsound('Audios/BayTecBienvenida.mp3')
+    playsound('Audios de interacción/Saludo.mp3')
     playsound('Audios de interacción/Paciente3.mp3')
     Gen ()
   else : 
@@ -43,7 +43,7 @@ def Amadeo():
 def Anthony():
   if face_names == ['Anthony']: 
     print("Hola Anthony") 
-    playsound('Audios/BayTecBienvenida.mp3')
+    playsound('Audios de interacción/Saludo.mp3')
     playsound('Audios de interacción/Paciente2.mp3')
     Gen ()
   else : 
@@ -52,7 +52,7 @@ def Anthony():
 def Laura ():
   if face_names == ['Laura']: 
     print("Hola Laura") 
-    playsound('Audios/BayTecBienvenida.mp3')
+    playsound('Audios de interacción/Saludo.mp3')
     playsound('Audios de interacción/Paciente1.mp3')
     Gen ()
   else : 
@@ -60,6 +60,8 @@ def Laura ():
 
 
 while(True):
+  #Aqui jalamos el codigo en donde se jala la info de la base de datos
+  from subPastillero import *
   #Jalamos la hora actual y la establecemos en formato hora:minuto
   now = datetime.now()
   tiempo = now.strftime("%H:%M")
@@ -99,6 +101,6 @@ while(True):
         #ir del locobot
         playsound('Audios de interacción/ReconocimientoFacial.mp3')
         from cv2_face_recognition import * #funcion face
-        Alonso()                 
+        Alonso()       
 
 
