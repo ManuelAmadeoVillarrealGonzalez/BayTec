@@ -1,28 +1,6 @@
 import pyrebase
 import time
 
-config = {
-  "apiKey": "AIzaSyBOSmtJEkga1km5itsEATqc8DJ0EuzKgBs",
-
-  "authDomain": "baytec-833d3.firebaseapp.com",
-
-  "databaseURL": "https://baytec-833d3-default-rtdb.firebaseio.com",
-
-  "projectId": "baytec-833d3",
-
-  "storageBucket": "baytec-833d3.appspot.com",
-
-  "messagingSenderId": "73252566520",
-
-  "appId": "1:73252566520:web:a6ae2120d12de826ef920d"
-
-}
-
-#create authetication
-firebase = pyrebase.initialize_app(config)
-#accesing database in firebase
-db = firebase.database()
-
 
 #Creamos un while para que cada 10 seg publique la informacion en el formato correcto
 
@@ -101,6 +79,26 @@ def pastilleroAlonso():
 
 #print("Data loaded from real time database ")
       
+config = {
+  "apiKey": "AIzaSyBOSmtJEkga1km5itsEATqc8DJ0EuzKgBs",
 
+  "authDomain": "baytec-833d3.firebaseapp.com",
+
+  "databaseURL": "https://baytec-833d3-default-rtdb.firebaseio.com",
+
+  "projectId": "baytec-833d3",
+
+  "storageBucket": "baytec-833d3.appspot.com",
+
+  "messagingSenderId": "73252566520",
+
+  "appId": "1:73252566520:web:a6ae2120d12de826ef920d"
+
+}
+
+#create authetication
+firebase = pyrebase.initialize_app(config)
+#accesing database in firebase
+db = firebase.database()
 
 print("HOla")
