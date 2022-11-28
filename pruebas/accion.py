@@ -62,7 +62,7 @@ def Laura ():
 
 while(True):
   #Aqui jalamos el codigo en donde se jala la info de la base de datos
-  from subPastillero import *
+  from pruebas.subPastillero3 import *
   
   #Jalamos la hora actual y la establecemos en formato hora:minuto
   now = datetime.now()

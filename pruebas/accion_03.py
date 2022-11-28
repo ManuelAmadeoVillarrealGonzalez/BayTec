@@ -1,7 +1,7 @@
 from datetime import datetime
 
 #Aqui jalamos el codigo en donde se jala la info de la base de datos
-from subPastillero import *
+from pruebas.subPastillero3 import *
 #from cv2_face_recognition import * # Este programa se correra completo en el moemto en donde se ponga
 
 #Jalamos la hora actual y la establecemos en formato hora:minuto
