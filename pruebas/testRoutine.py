@@ -7,7 +7,7 @@ from playsound import playsound
 import math
 import time
 from interbotix_xs_modules.locobot import InterbotixLocobotXS
-from subPastillero import *
+from pruebas.subPastillero3 import *
 import socket
 
 HOST = "192.168.211.15"  # The server's hostname or IP address
