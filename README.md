@@ -2,6 +2,9 @@
 Este proyecto tiene como finalidad utilizar el LoCobot como un asistente médico personal para personas que requieran atención no intensiva.
 Aquí se almacenará los scripts que se utilizarán para el proyecto.
 
+Para más información del proyecto, favor de ir a la [Wiki](https://github.com/anthonyibrail/BayTec/wiki/BayTec:-Tu-asistente-m%C3%A9dico-personal-%E2%99%A1) de este repositorio.
+
+
 ## Equipo
 
 * **Laura Patricia Carrasco Molina** - [laumoli](https://github.com/laumoli)
